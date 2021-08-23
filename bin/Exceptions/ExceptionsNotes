@@ -1,0 +1,102 @@
+1)FileNotFoundException: 
+
+	 		a)The file with the specified path does not exist
+	 		b)If the is unaccessible 
+2)IOException:
+	        a)It can handle all exceptions about Input and Output
+	    
+	    Note: IOException is the parent of FileNotFoundException
+	   
+	    Note: If you are using IOException Class, no need to use FileNotFoundException Class
+	    
+	    Note: When you see an Exception, you have 2 options
+	    		a)Using "throws" declaration in the method name line
+	    		b)Using try-catch block
+	    		
+1)You can use multiple "catch blocks" for a single "try block"
+
+	 	2)If you use multiple "catch blocks", order the Exception Classes from child to parent, otherwise
+	 	  you will get Compile Time Error.
+	 	
+	 	3)If you use multiple "catch blocks", you can get different messages for every Exception
+	 	
+	 	4)try-block cannot be used alone
+	 	
+	 	5)When you type code if you get red underline for Exceptions, that kind of Exceptions are called "Checked Exceptions" 
+	 	  If you do not get any red underline for some Exceptions, they are called "Unchecked Exceptions"
+	 	  FileNotFoundException and IOException are "checked exceptions"
+	 	
+	 	6)If there is any Exception Java stops execution
+	 	
+1)If you use for example length() method for "null" String object, you will get 
+	 	 
+	 	  "NullPointerException"
+	 	
+	 	2)"NullPointerException" is an "unchecked exception"
+	 	
+	 	3)If there is no parent-child relationship between Exception Classes, the order of catch-blocks
+	 	  is not important
+	 	
+	 	4)try-block cannot be used alone, it can be used like the followings;
+	 		a)try + catch
+	 		b)try + multiple catch
+	 		c)try + catch or multiple catch + finally
+	 		d)try + finally	 	
+	 		
+1)ArrayIndexOutOfBoundsException is thrown if you use non-existing index in Arrays
+	 	
+2)ArrayIndexOutOfBoundsException is an un-checked exception
+	 	
+3)ClassCastException is thrown if you try to cast a data type to another which is not supported by Java
+	 	
+4)ClassCastException is an un-checked exception
+	 	
+5)NumberFormatException is thrown if you use non-digit characters in a String and use parseInt()
+	 	
+6)NumberFormatException is an un-checked exception	 	
+
+1- Abstract methods can be put in abstract classes
+2- Abstract classes can have both abstract and concrete methods
+3- to create an abstract method
+     a) put abstract keyword after access modifier                                
+	 b) do not create method body
+	 
+4- For abstract methods we can use public, default and protected modifiers but we can not use
+    private as access modifiers.
+5- Abstract methods must be overridden by child classes. if you do not do that you will get CTE.
+6- Just concrete child child classes must override abstract methods
+7- We can not put abstract methods inside the concrete classes.
+
+We can use finally to close our file or database.
+	
+	it will be executed in any condition in try block
+	it can cause some security problems
+	it means you will pay a lot to the cloud company. 
+	
+1- we can use throws in method signature we can use throw inside the method body wherever we want
+2- after throws keyword we can type more than one exception, but when you use throw keyword you should type throw for every exception
+3- with throws keyword we use the name of the exception with throw keyword we use object
+
+When we crate "Custom Exception";
+   
+   A) For Checked Custom Exception
+  
+   1- Put "Exception" word at the end of the Custom Exception class name like IllegalGradeException
+   2- Do not forget to extend "Exception" class
+   3- Create constructor with a String parameter, and "super()" constructor call keyword
+   
+   B) For Unchecked Custom Exception
+  
+   1- Put "Exception" word at the end of the Custom Exception class name like IllegalGradeException
+   2- Do not forget to extend "RuntimeException" class
+   3- Create constructor with a String parameter, and "super()" constructor call keyword
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 	
